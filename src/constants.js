@@ -1,4 +1,5 @@
-export baseURL="https://fast-foods-api-main.herokuapp.com/"
+import regeneratorRuntime from 'regenerator-runtime'
+export const baseURL = "https://fast-foods-api-main.herokuapp.com/"
 
 export const postData=async(url,token,data)=>{
   const response = await fetch(url,{

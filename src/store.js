@@ -6,6 +6,6 @@ import { composeWithDevTools } from "redux-devtools-extension";
 const intialState = {};
 const middleware = [thunk];
 
-const store = createStore(reducers,initialState, applyMiddleware(thunk));
+const store = createStore(reducers,intialState, applyMiddleware(thunk));
 
 export default store;
